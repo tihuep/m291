@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(100, 255, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+  }
