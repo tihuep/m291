@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.grid-item {
+    text-align: center;
+}
+
+.invisible {
+    background-color: blue;
+} 
+
+.cantonButton.hidden img{
+  display: none;
+}
+
+.cantonButton {
+    width: 100px;
+    height: 100px;  
+}
