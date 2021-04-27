@@ -1,0 +1,24 @@
+body{
+    font-size: 15px
+}
+
+.grid-container {
+    display: grid;
+}
+
+.main-grid-container {
+    grid-template-columns: auto;
+}
+
+.personal-grid-container {
+    grid-template-columns: auto auto;
+}
+
+.personal-table {
+    width: 100%;
+}
+
+.normalFont {
+    font-weight: normal;
+    font-size: 15px;
+}
