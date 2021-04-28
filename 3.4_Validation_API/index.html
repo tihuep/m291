@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernfahrgesuch - Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="main-grid-container grid-container">
+        <div class="main-grid-item">
+            <h1>Lernfahrgesuch</h1>
+        </div>
+        <form id="mainForm">
+            <div class="main-grid-item" id="personal">
+                <h2>Personalien</h2>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Name (auch Geburtsname)
+                                <input type="text" name="lastname" required>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Vorname(n)
+                                <input type="text" name="firstname" required>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Strasse
+                                <input type="text" name="street" required>
+                            </label>
+                        </td>
+                        <td>
+                            <label>Nr.
+                                <input type="text" name="streetNr" required>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>PLZ
+                                <input type="text" name="zip">
+                            </label>
+                        </td>
+                        <td>
+                            <label>Wohnort
+                                <input type="text" name="city">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Heimatort(e)/Kanton (Ausländer Heimatstaat)
+                                <input type="text" name="hometown">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Geburtsdatum
+                                <input type="date" id="inputBirtdate">
+                            </label>
+                        </td>
+                        <td>
+                            <label><input type="radio" name="gender" value="male">Männlich</label>
+                            <label><input type="radio" name="gender" value="female">Weiblich</label>
+                            <label><input type="radio" name="gender" value="other">Anderes</label>
+                        </td>
+                        <td>
+                            <label>Telefon
+                                <input type="text" name="telephone">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Früherer Wohnort
+                                <input type="text" name="lastDomicile">
+                            </label>
+                        </td>
+                        <td>
+                            <label>bis
+                                <input type="text" name="lastDomicileUntil">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="personal-table">
+                    <tr>
+                        <td>
+                            <label>Passfoto
+                                <input type="file" name="photo" accept="image/*">
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main-grid-item" id="category">
+                <h2>Kategorien</h2>
+                <table>
+                    <tr>
+                        <th>A1-B</th>
+                        <th>C1-D</th>
+                        <th>BE-Trolley/110</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="categoryA1" name="category">
+                            <label for="categoryA1">A1</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryC1" name="category">
+                            <label for="categoryC1">C1</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryBE" name="category">
+                            <label for="categoryBE">BE</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="categoryA35" name="category">
+                            <label for="categoryA35">A 35kW</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryC" name="category">
+                            <label for="categoryC">C</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryC1E" name="category">
+                            <label for="categoryC1E">C1E</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="categoryA" name="category">
+                            <label for="categoryA">A</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryD1" name="category">
+                            <label for="categoryD1">D1</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryCE" name="category">
+                            <label for="categoryCE">CE</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="categoryB1" name="category">
+                            <label for="categoryB1">B1</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryD" name="category">
+                            <label for="categoryD">D</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="categoryD1E" name="category">
+                            <label for="categoryD1E">D1E</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="categoryB" name="category">
+                            <label for="categoryB">B</label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryDE" name="category">
+                            <label for="categoryDE">DE</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryF" name="category">
+                            <label for="categoryF">F</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryG" name="category">
+                            <label for="categoryG">G</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryM" name="category">
+                            <label for="categoryM">M</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryBPT121" name="category">
+                            <label for="categoryBPT121">BPT/121</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryBPT122" name="category">
+                            <label for="categoryBPT122">BPT/122</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryC1118" name="category">
+                            <label for="categoryC1118">C1/118</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="categoryTrolley110" name="category">
+                            <label for="categoryTrolley110">Trolley/110</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main-grid-item" id="medical">
+                <h2>Krankheiten, Behinderungen, Substanzkonsum</h2>
+                <h3>Haben Sie eine der folgenden Krankheiten oder sind Sie deswegen in ärztlicher Behandlung?</h3>
+                <table>
+                    <tr>
+                        <td>
+                            - Zuckerkrankheit oder andere Stoffwechselerkrankungen?
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.1Yes" name="2.1.1">
+                            <label for="2.1.1Yes">Ja</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.1No" name="2.1.1">
+                            <label for="2.1.1No">Nein</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            - Herz-Kreislauf-Erkrankungen?
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.2Yes" name="2.1.2">
+                            <label for="2.1.2Yes">Ja</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.2No" name="2.1.2">
+                            <label for="2.1.2No">Nein</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            - Augenerkrankung?
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.3Yes" name="2.1.3">
+                            <label for="2.1.3Yes">Ja</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="2.1.3No" name="2.1.3">
+                            <label for="2.1.3No">Nein</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            - ...?
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="main-grid-item" id="visual">
+                <h2>Sehtest</h2>
+                <label for="inputVisualTest">Laden Sie die Auswertung eines Augenarztes/Optikers hoch</label>
+                <input type="file" id="inputVisualTest">
+            </div>
+            <div class="main-grid-item" id="otherPermits">
+                <h2>Besitzen oder besassen Sie schon einmal einen Lehrfahr- oder Führerausweis in der Schweiz oder im Ausland?
+                    <span class="normalFont"><input type="radio" id="otherPermitsYes" name="otherPermits">
+                    <label for="otherPermitsYes">Ja</label>
+                    <input type="radio" id="otherPermitsNo" name="otherPermits">
+                    <label for="otherPermitsNo">Nein</label>
+                </span></h2>
+
+            </div>
+            <div class="main-grid-item" id="assistance">
+                <h2>Sind Sie minderjährig oder stehen Sie unter umfassender Beistandschaft?</h2>
+            </div>
+            <input type="submit" id="btnSubmit" value="Abschicken">
+        </form>
+    </div>
+</body>
+</html>
