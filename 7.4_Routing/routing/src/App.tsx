@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
 import Hello from "./components/Hello";
-import Error404 from "./components/Error404";
+import Error404 from './components/Error404';
 
 export default function App() {
   return (
