@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MyButton from './components/Button';
@@ -21,6 +21,9 @@ function App() {
 
   const [response, setResponse] = useState('');
   const [open, setOpen] = React.useState(false);
+
+  useEffect(() => alert('Response changed'), [response]);
+
 
   const pressButton = (button: String): void => {
     if (button === "ping"){
